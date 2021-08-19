@@ -350,3 +350,9 @@ template {
 [hidden] {
   display: none;
 }
+
+/* remove padding and dots on lists*/
+ul {
+  padding: 0;
+  list-style: none;
+}

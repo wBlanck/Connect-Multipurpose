@@ -1,0 +1,49 @@
+@use '../util' as *;
+
+.nav {
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: rem(5);
+  }
+  &__logo {
+    font-size: rem(18);
+    font-weight: 600;
+    color: var(--clr-bluegray-800);
+  }
+  &__list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: rem(44);
+
+    @include breakpoint-down('small-762'){
+     display: none;
+    }
+  }
+  &__item {
+    
+  }
+  &__link {
+    display: block;
+    text-transform: capitalize;
+    font-size: rem(13.6);
+    font-weight: 600;
+    color: var(--clr-gray-400);
+    transition: color .2s ease-in-out;
+    padding: rem(5) rem(10);
+    margin-right: rem(10);
+
+    &:hover {
+      color: #8a8a8ac4;
+    }
+  }
+
+  
+}
