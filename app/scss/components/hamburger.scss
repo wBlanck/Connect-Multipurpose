@@ -1,0 +1,40 @@
+@use '../util' as *;
+
+.hamburger {
+  display: none;
+  position: relative;
+  padding: rem(7) 0;
+  cursor: pointer;
+  margin-left: auto;
+  
+  @include breakpoint-down('small-762'){
+    display: block;
+  }
+  &__bar {
+    display: block;
+    width: rem(25);
+    height: rem(3);
+    background-color: var(--clr-gray-400);
+    border-radius: 10px;
+   
+    
+    &::before {
+      content: '';
+      width: rem(25);
+      height: rem(3);
+      background-color: var(--clr-gray-400);
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+    }
+    &::after {
+      content: '';
+      width: rem(25);
+      height: rem(3);
+      background-color: var(--clr-gray-400);
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
