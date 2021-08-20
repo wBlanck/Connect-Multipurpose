@@ -5,13 +5,5 @@
 	margin: 0 auto;
 	height: 100%;
 	
-	@include breakpoint-down('medium-1198'){
-		max-width: rem(960);
-	}
-	@include breakpoint-down('medium-990'){
-		max-width: rem(720);
-	}
-	@include breakpoint-down('small-762'){
-		max-width: rem(540);
-	}
+
 }

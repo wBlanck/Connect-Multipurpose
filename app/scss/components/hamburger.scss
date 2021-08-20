@@ -7,9 +7,6 @@
   cursor: pointer;
   margin-left: auto;
   
-  @include breakpoint-down('small-762'){
-    display: block;
-  }
   &__bar {
     display: block;
     width: rem(25);
