@@ -1,0 +1,10 @@
+@use '../util' as *;
+
+.hero-section {
+  background-color: /* var(--clr-lightblue) */ green;
+  height: 100vh;
+  padding-top: rem(79);
+  &__content {
+
+  }
+}
