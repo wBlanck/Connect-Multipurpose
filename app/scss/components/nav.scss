@@ -19,11 +19,13 @@
     color: var(--clr-bluegray-800);
   }
   &__list {
-    display: flex;
+    display: none;
     margin-left: auto;
     align-items: center;
 
-    display: none;
+    @include breakpoint('medium') {
+      display: flex;
+    }
   }
   &__item {
     

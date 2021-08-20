@@ -5,7 +5,14 @@
 	margin: 0 auto;
 	height: 100%;
 	
-	@mixin breakpoints-up('medium') {
-		display: none;
+	@include breakpoint('medium') {
+		max-width: rem(720);
 	}
+	@include breakpoint('large') {
+		max-width: rem(960);
+	}
+	@include breakpoint('large-1200') {
+		max-width: rem(1140);
+	}
+	
 }

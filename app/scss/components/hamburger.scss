@@ -6,6 +6,9 @@
   cursor: pointer;
   margin-left: auto;
   
+  @include breakpoint('medium') {
+		display: none;
+	}
   &__bar {
     display: block;
     width: rem(25);
