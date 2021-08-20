@@ -5,5 +5,7 @@
 	margin: 0 auto;
 	height: 100%;
 	
-
+	@mixin breakpoints-up('medium') {
+		display: none;
+	}
 }
